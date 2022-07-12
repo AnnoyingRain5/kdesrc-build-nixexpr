@@ -7,13 +7,13 @@ let
 in
 stdenv.mkDerivation rec {
   name = "kdesrc-build-${version}";
-  version = "20.06";
+  version = "22.01";
   src = fetchFromGitLab {
     domain = "invent.kde.org";
     owner = "SDK";
     repo = "kdesrc-build";
     rev = "v${version}";
-    sha256 = "GNbGA+5b//4+R7w7Wy+yJ4nKPnosoTKo8wpKDcy9eOI=";
+    sha256 = "X+A4nMqiFrrToQ85xg5r7DLxgN+iWRIVnhZ4JzXqAi8=";
   };
 
   nativeBuildInputs = [ makeWrapper ];

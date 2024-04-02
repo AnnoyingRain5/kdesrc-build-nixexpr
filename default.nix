@@ -6,8 +6,8 @@ let
   perl5lib = perlPackages.makeFullPerlPath [ perlPackages.NetHTTPSNB perlPackages.YAMLSyck ];
 in
 stdenv.mkDerivation rec {
-  name = "kdesrc-build-${version}";
-  version = "22.01";
+  name = "kdesrc-build";
+  version = "22.07";
   src = fetchFromGitLab {
     domain = "invent.kde.org";
     owner = "SDK";
